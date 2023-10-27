@@ -98,11 +98,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let answer = multiply(multArr[0], multArr[1]);
+  let answer2 = multiply(answer[0], multArr[2]);
+  let total = answer2[0];
+  return [total, `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${total}.`];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
